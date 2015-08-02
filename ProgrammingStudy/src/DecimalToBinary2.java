@@ -1,16 +1,16 @@
 import java.util.Scanner;
 
-public class BinaryToDecimal2 {
+public class DecimalToBinary2 {
 	static Scanner key=new Scanner(System.in);  
 	public static void main(String[] args){
 		int num=key.nextInt();key.nextLine();
-		tenToTwo(num);
+		decimalToBinary(num);
 	}
-	public static void tenToTwo(int num){
+	public static void decimalToBinary(int num){
 		if(num<2)
 			System.out.print(num);
 		else{
-			tenToTwo(num/2);
+			decimalToBinary(num/2);
 			System.out.print(num%2);
 		}
 	}
